@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050b16">
+<title>CYBER SHIELD PRO</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#050b16;
+ color:#e8f5ff;
+ font-family:Tahoma,sans-serif;
+}
+header{
+ padding:25px 15px;
+ text-align:center;
+ background:#091629;
+ border-bottom:1px solid #00d9ff;
+}
+header h1{
+ color:#00d9ff;
+ font-size:24px;
+ letter-spacing:2px;
+}
+header p{color:#91a9c5;font-size:12px}
+.container{padding:18px}
+.card{
+ background:#0c1b30;
+ border:1px solid #173b56;
+ border-radius:15px;
+ padding:18px;
+ margin-bottom:15px;
+}
+.card h3{color:#00d9ff}
+.status{
+ color:#00e89b;
+ font-weight:bold;
+}
+button{
+ width:100%;
+ padding:14px;
+ border:0;
+ border-radius:10px;
+ background:#00c8ed;
+ color:#00111c;
+ font-weight:bold;
+ font-size:15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>CYBER SHIELD PRO</h1>
+<p>ADVANCED SECURITY CENTER</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h3>وضعیت سیستم</h3>
+<p class="status">● رابط امنیتی فعال است</p>
+<p>نسخه: Advanced</p>
+<p>وضعیت: آماده بررسی</p>
+</div>
+
+<div class="card">
+<h3>مرکز اسکن امنیتی</h3>
+<p>بررسی نمایشی وضعیت امنیت دستگاه</p>
+<button onclick="scan()">شروع بررسی</button>
+<p id="result"></p>
+</div>
+
+<div class="card">
+<h3>محافظت شبکه</h3>
+<p class="status">● پنل نظارت شبکه آماده است</p>
+</div>
+
+</div>
+
+<script>
+function scan(){
+let r=document.getElementById("result");
+r.innerText="بررسی اولیه انجام شد؛ این نسخه هنوز به ابزارهای امنیتی واقعی دستگاه متصل نیست.";
+}
+</script>
+
+</body>
+</html>
